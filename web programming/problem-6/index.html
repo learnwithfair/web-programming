@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        * {
+            color: white;
+        }
+
+        body {
+            background-color: #e7dbdb;
+
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        form {
+            width: 500px;
+            margin: auto;
+            background-color: gray;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px #999999;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bolder;
+            font-size: 18px;
+        }
+
+        .form-control>input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 3px;
+            border: 1px solid #999999;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            background-color: #999999;
+        }
+
+        .gender>input,
+        .gender>label {
+            display: inline;
+        }
+
+        .form-control>.submit {
+            background-color: #4CAF50;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .form-control>.submit:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" method="post">
+        <h1>Personal Details</h1>
+        <div class="form-control">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div class="form-control">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email">
+        </div>
+
+        <div class="form-control">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+        </div>
+        <div class="form-control">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+        </div>
+        <div class="gender">
+            <label for="gender">Gender:</label>
+            <span style="margin-left: 20px;">
+                <input type="radio" value="Male" name='gender' checked> Male
+                <input type="radio" value="Female" name='gender'> Female
+            </span>
+        </div>
+        <br>
+        <br>
+        <div class="form-control">
+            <input type="submit" class="submit" value="Submit">
+        </div>
+
+    </form>
+
+</body>
+
+</html>

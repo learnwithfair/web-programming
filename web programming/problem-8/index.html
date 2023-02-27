@@ -1,0 +1,100 @@
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: #ddd;
+            font-size: 30px;
+        }
+
+        .div2 {
+            height: 80%;
+            width: 45%;
+            float: left;
+            font-size: 30px;
+            margin: auto;
+        }
+
+        .div1 {
+            height: 80%;
+            width: 50%;
+            float: right;
+        }
+
+        .cal {
+            height: 20%;
+            font-size: 50px;
+            color: blue;
+            margin: auto;
+
+        }
+
+        input {
+            font-size: 30px;
+        }
+
+        textarea {
+            font-size: 30px;
+        }
+
+        label {
+            color: red;
+        }
+
+        .v {
+            border-right: 2px solid black;
+            height: 250px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="cal">
+        <center>
+            Calculator
+        </center>
+        <hr />
+    </div>
+    <div class="div1">
+
+        <label>Result </label>
+        <hr />
+
+        <textarea rows="3" cols="33" id="result">
+
+  </textarea>
+    </div>
+    <div class="div2">
+        <div class="vl">
+            <form method="post" action="">
+                <label>Input </label>
+                <hr />
+                Enter 1st number <input type="number" name="fnum" id="fnum" /><br /><br />
+                Enter 2nd number <input type="number" name="snum" id="snum" />
+                <hr />
+                <input type="button" name="MUL" onclick="Mul()" value="MUL" />
+                <input type="button" name="DIV" onclick="Div()" value="DIV" />
+            </form>
+        </div>
+    </div>
+    <script>
+
+        function Mul() {
+            var num1 = document.getElementById('fnum').value;
+            var num2 = document.getElementById('snum').value;
+            var result = document.getElementById('result');
+            var Result = num1 * num2;
+            result.innerHTML = num1 + " Mul " + num2 + " = " + Result;
+        }
+        function Div() {
+            var num1 = document.getElementById('fnum').value;
+            var num2 = document.getElementById('snum').value;
+            var result = document.getElementById('result');
+            var Result = num1 / num2;
+            result.innerHTML = num1 + " Div " + num2 + " = " + Result.toFixed(2);
+        }
+    </script>
+</body>
+
+</html>
