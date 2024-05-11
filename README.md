@@ -31,7 +31,7 @@ Thanks for visiting my GitHub account!
 |                                         |
 | :-------------------------------------: |
 |                 Roadmap                 |
-| ![roadmap](images/working-priciple.png) |
+| ![roadmap](images/working-principle.png) |
 
 ## Key Components of Web Programming
 
